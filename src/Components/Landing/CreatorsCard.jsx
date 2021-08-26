@@ -1,7 +1,10 @@
+import WindowDimensions from "../Hooks/WindowDimension"
 
+const CreatorsCard = props => {
 
-const CreatorsCard = props => (
-    <div style={{
+    const {width, } = WindowDimensions()
+
+    const pcViewCard = {
         display: 'grid',
         placeItems: 'center',
         color: 'white',
@@ -11,24 +14,61 @@ const CreatorsCard = props => (
         borderRadius: '20px',
         border: '1px solid white',
         boxShadow: '10px 10px 0 0 #bb85fc'
-    }}>
-        <div style={{
-            width: '80%',
-            height: '90%',
-            display: 'flex',
-            flexDirection: 'column',
-            justifyContent: 'center',
-            textAlign: 'center',
-        }}>
-            <h1 style={{fontSize: '75px', color: 'gold'}}>{props.image}</h1>
-            <p style={{
-                fontFamily: 'Montserrat', 
-                fontSize: '15px',
-                fontWeight: '600',
-                letterSpacing: '1px'
-            }}>{props.paragraph}</p>
+    },
+    cardStyles = width =>{
+        if (width > 900) 
+            return pcViewCard
+        else return {
+            ...pcViewCard,
+            height: '37.5vh',
+            marginBottom: '50px',
+            boxShadow: '0 10px 0 0 #bb85fc'
+        }
+    }
+
+    const innerContainerStyles = {
+        width: '80%',
+        height: '100%',
+        display: 'flex',
+        flexDirection: 'column',
+        justifyContent: 'center',
+        textAlign: 'center',
+    }
+
+    const h1Styles = width => {
+        if(width > 900)
+            return {
+                fontSize: '7vw', color: 'gold'
+            }
+        else return {
+            fontSize: '75px', color: 'gold',
+            margin: '0', padding: '0'
+        }
+    }
+
+    const universalPStyle = {
+        fontFamily: 'Montserrat', 
+        fontSize: '1.25vw',
+        fontWeight: '600',
+        letterSpacing: '1px'
+    },
+    pStyles = width => {
+        if(width > 900) 
+            return universalPStyle
+        else return {
+            ...universalPStyle,
+            fontSize: '20px'
+        }
+    }
+
+    return (
+        <div style={cardStyles(width)}>
+            <div style={innerContainerStyles}>
+                <h1 style={h1Styles(width)}>{props.image}</h1>
+                <p style={pStyles(width)}>{props.paragraph}</p>
+            </div>
         </div>
-    </div>
-)
+    )
+}
 
 export default CreatorsCard

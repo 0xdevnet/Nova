@@ -2,11 +2,10 @@
 import Hero from './Hero'
 import Creators from './Creators'
 import Customers from './Customers'
-import './LandingPage.css'
 
 const LandingPage = () => {
     return (
-        <div className="landing-container"> 
+        <div style={{overflow: 'hidden', width: '100vw'}}> 
             <Hero/>
             <Creators/>
             <Customers/>
