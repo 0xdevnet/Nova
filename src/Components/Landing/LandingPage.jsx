@@ -2,6 +2,7 @@
 import Hero from './Hero'
 import Creators from './Creators'
 import Customers from './Customers'
+import Contact from './Contact'
 
 const LandingPage = () => {
     return (
@@ -9,6 +10,7 @@ const LandingPage = () => {
             <Hero/>
             <Creators/>
             <Customers/>
+            <Contact/>
         </div>
     )
 }

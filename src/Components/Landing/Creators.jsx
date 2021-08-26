@@ -30,6 +30,7 @@ const Creators = () => {
             return universalH1Style
         else return {
             ...universalH1Style,
+            margin: '7.5vw 0 25px 0',
             fontSize: '2.5rem'
         }
     }

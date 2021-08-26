@@ -116,6 +116,8 @@ const Hero = () => {
         }
     }
 
+    const comingSoon = () => alert("Coming Soon!")
+
     return (
         <div style={{
             height: '80vh', width: '100vw', 
@@ -131,7 +133,7 @@ const Hero = () => {
                         </p>
                     </div>
                     <div style={buttonContainerStyle(width)}>
-                        <button className="getstarted-button" style={buttonStyle(width)}>Get Started</button>
+                        <button onClick={comingSoon} className="getstarted-button" style={buttonStyle(width)}>Go to our Web App</button>
                     </div>
             </div>
         </div>

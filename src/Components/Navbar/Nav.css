@@ -5,3 +5,18 @@
     height: 20vh;
     background-color: transparent;
 }
+
+.nav-container h1 {
+    font-size: '2.5rem';
+    border-left: 2px solid black;
+    border-right: 2px solid black;
+}
+
+@media screen and (max-width: 900px) {
+    .nav-container {
+        height: 15vh;
+    }
+    .nav-container h1 {
+        font-size: 2rem;
+    }
+}
