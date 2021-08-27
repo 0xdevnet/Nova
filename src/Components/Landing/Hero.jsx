@@ -133,7 +133,7 @@ const Hero = () => {
                         </p>
                     </div>
                     <div style={buttonContainerStyle(width)}>
-                        <button onClick={comingSoon} className="getstarted-button" style={buttonStyle(width)}>Go to our Web App</button>
+                        <button onClick={comingSoon} className="getstarted-button" style={buttonStyle(width)}>Go to our Test App</button>
                     </div>
             </div>
         </div>
