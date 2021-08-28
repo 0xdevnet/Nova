@@ -133,7 +133,7 @@ const Hero = () => {
                         </p>
                     </div>
                     <div style={buttonContainerStyle(width)}>
-                        <a href="http://novaterra-env.eba-humppwxv.ap-northeast-2.elasticbeanstalk.com/" className="getstarted-button" style={buttonStyle(width)}>Go to our Demo App</a>
+                        <a target="_blank" rel="noopener noreferrer" href="http://novaterra-env.eba-humppwxv.ap-northeast-2.elasticbeanstalk.com/" className="getstarted-button" style={buttonStyle(width)}>Go to our Demo App</a>
                     </div>
             </div>
         </div>
