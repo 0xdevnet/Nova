@@ -63,7 +63,7 @@ const Creators = () => {
             <div style={cardLayoutStyles(width)}>
                 <CreatorsCard image={<GiFreedomDove/>} paragraph="Freedom without censorship – to create what you want to create."/>
                 <CreatorsCard image={<SiGraphcool/>} paragraph="Decentralized platform that aims to always represent your artistry."/>
-                <CreatorsCard image={<GiReceiveMoney/>} paragraph="We open to you the financial innovations and benifits of DeFi."/>
+                <CreatorsCard image={<GiReceiveMoney/>} paragraph="We open to you the financial innovations and benefits of DeFi."/>
             </div>
         </div>
     )

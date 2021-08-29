@@ -116,8 +116,6 @@ const Hero = () => {
         }
     }
 
-    const comingSoon = () => alert("Coming Soon!")
-
     return (
         <div style={{
             height: '80vh', width: '100vw', 
